@@ -14,7 +14,7 @@ public class Main {
     Connection con = null;
     try {
       // STEP 1: データベースの接続
-      con = DriverManager.getConnection("jdbc:h2:~/rpgdb");
+      con = DriverManager.getConnection("jdbc:h2:~/rpgdb", "sa", "");
       con.setAutoCommit(false);
       // STEP 2: SQL送信処理
       /* *****メインのDB操作処理***** */

@@ -12,7 +12,7 @@ public class Main {
     Connection con = null;
     try {
       // STEP 1: データベースの接続
-      con = DriverManager.getConnection("jdbc:h2:~/rpgdb");
+      con = DriverManager.getConnection("jdbc:h2:~/rpgdb", "sa", "");
 
       // STEP 2: 送信処理
       // ********** コード9-2 ここから **********

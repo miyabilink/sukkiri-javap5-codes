@@ -5,7 +5,7 @@ public class Main {
     IO.println("1円以上のアイテム一覧表を表示します");
     ArrayList<Item> items = ItemsDAO.findByMinimumPrice(1);
     for (Item item : items) {
-      IO.printf("%10s%4d%4d", item.getName(), item.getPrice(), item.getWeight());
+      System.out.printf("%-10s%4d%4d\n", item.getName(), item.getPrice(), item.getWeight());
     }
   }
 }

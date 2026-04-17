@@ -3,7 +3,7 @@ import java.net.*;
 
 public class Main {
   void main() throws IOException {
-    URL url = new URL("https://dokojava.jp");
+    URL url = URI.create("https://dokojava.jp").toURL();
     InputStream is = url.openStream();
     InputStreamReader isr = new InputStreamReader(is);
     int i = isr.read();
